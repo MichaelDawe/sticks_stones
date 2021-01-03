@@ -13,7 +13,7 @@ minetest.register_node("sticks_stones:stones", {
   sunlight_propagates = true,
   buildable_to = true,
   drop = "default:cobble",
-  groups = {oddly_breakable_by_hand = 3, stone = 1},
+  groups = {oddly_breakable_by_hand = 3, stone = 1, not_in_creative_inventory = 1, attached_node = 1},
 })
 
 --Hand Mineable Desert Stone
@@ -31,7 +31,7 @@ minetest.register_node("sticks_stones:desert_stones", {
   sunlight_propagates = true,
   buildable_to = true,
   drop = "default:desert_cobble",
-  groups = {oddly_breakable_by_hand = 3, stone = 1},
+  groups = {oddly_breakable_by_hand = 3, stone = 1, not_in_creative_inventory = 1, attached_node = 1},
 })
 
 dofile(minetest.get_modpath("sticks_stones").."/decoration.lua")
